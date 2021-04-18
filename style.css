@@ -1,6 +1,7 @@
 body {
     margin: 0;
     background-color: rgb(18, 45, 89);
+    padding-top: 20px;
     font-family: Arial;
 }
 
@@ -15,17 +16,16 @@ body {
     border-radius: 14px;
 }
 
-  header{
-      
-  }
+.center {
 
-  .center {
     display: block;
+    padding-top: 20px;
+    padding-bottom: 20px;
     margin-left: auto;
     margin-right: auto;
   }
 
-  .topnav{
+.topnav{
       display: flex;
       align-items: center;
       justify-content: center;
@@ -40,33 +40,60 @@ body {
   }
   
   /* Change color on hover */
-  .topnav a:hover {
+.topnav a:hover {
     color: rgb(255, 162, 0);
   }
 
-  .row{
+.row{
      display: flex;
      flex-wrap: wrap; 
   }
 
-  .side{
-      flex: 30%;
-      padding: 20px;
-  }
+.side{
+  flex: 30%;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
 
-  .main{
+.side h5{
+  color: rgb(18, 45, 89);
+}
+  
+
+.featureimg{
+  height: 215px;
+  width: 200px;
+  padding-top: 20px;
+  object-fit: cover;
+}
+
+.main{
       flex: 70%;
       padding: 20px;
   }
 
-  /* Fake image, just for this example */
-.fakeimg {
-    background-color: #aaa;
-    width: 100%;
-    padding: 20px;
-  }
+.main h2, .main h3{
+  color: rgb(123, 46, 15);
+}
+  
+.main p{
+  color: rgb(1, 86, 163);
+}
 
-  footer{
+.main a {
+  color: rgb(255, 162, 0);
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.main a:hover {
+  color: white;
+  background-color: rgb(255, 162, 0);
+}
+
+
+footer{
     padding: 20px;
     text-align: center;
     color: rgb(251, 251, 251);
@@ -78,3 +105,4 @@ body {
       flex-direction: column;
     }
   }
+
