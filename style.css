@@ -40,9 +40,11 @@ body {
   }
   
   /* Change color on hover */
-.topnav a:hover {
+.topnav a:hover, .topnav .active {
     color: rgb(255, 162, 0);
   }
+
+
 
 .row{
      display: flex;
@@ -72,6 +74,14 @@ body {
       flex: 70%;
       padding: 20px;
   }
+
+.mainImg{
+  height: 200px;
+  width: 620px;
+  
+  object-fit: cover;
+  border-radius: 15px;
+}
 
 .main .fa {
     padding: 20px;
@@ -105,6 +115,10 @@ body {
 .main .inline:hover {
   color: white;
   background-color: rgb(255, 162, 0);
+}
+
+.contactForm{
+  color:chocolate;
 }
 
 
