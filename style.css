@@ -73,31 +73,19 @@ body {
       padding: 20px;
   }
 
-.social a .fa {
+.main .fa {
     padding: 20px;
     font-size: 30px;
     width: 30px;
     text-align: center;
     text-decoration: none;
-    border-radius: 50%;
+    margin: 5px 2px;
+    color:  rgb(255, 162, 0);
+   
   }
   
-.social a .fa:hover {
+.main .fa:hover {
     opacity: 0.7;
-}
-
-.social a .fa-facebook {
-  background: #3B5998;
-  color: white;
-}
-
-.social a .fa-twitter {
-  background: #55ACEE;
-  color: white;
-}
-.social a  .fa.fa-youtube {
-  background: #bb0000;
-  color: white;
 }
 
 .main h2, .main h3{
@@ -108,13 +96,13 @@ body {
   color: rgb(1, 86, 163);
 }
 
-.main a {
+.main .inline {
   color: rgb(255, 162, 0);
   text-decoration: none;
 }
 
 /* Change color on hover */
-.main a:hover {
+.main .inline:hover {
   color: white;
   background-color: rgb(255, 162, 0);
 }
