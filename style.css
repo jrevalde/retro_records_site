@@ -45,6 +45,25 @@ body {
   }
 
 
+/*banner styling*/  
+.banner{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: 240px;
+  background-image: url(images/pexels-expect-best-351265.jpg);
+  background-size:cover;
+  box-shadow:10px 10px 50px 10px black inset; 
+  
+}
+
+.w3-spin{
+  height: 200px;
+}
+
+/*end of banner styling*/
+
 
 .row{
      display: flex;
@@ -58,8 +77,12 @@ body {
   padding: 20px;
 }
 
+.side h3{
+  color: rgb(1, 86, 163);
+}
+
 .side h5{
-  color: rgb(18, 45, 89);
+  color: rgb(123, 46, 15);
 }
   
 
@@ -101,6 +124,10 @@ body {
 .main h2, .main h3{
   color: rgb(123, 46, 15);
 }
+
+.shopTitle{
+  text-align: center;
+}
   
 .main p{
   color: rgb(1, 86, 163);
@@ -117,9 +144,71 @@ body {
   background-color: rgb(255, 162, 0);
 }
 
-.contactForm{
-  color:chocolate;
+/*table styling*/
+table{
+  border-collapse: collapse;
+  margin: 25px, 0;
+  font-size: 0.9em;
+  min-width: 400px;
+  width:100%;
 }
+
+th, td {
+  border-bottom: 1px solid #ddd;
+}
+
+.tableImg{
+  height: 100px;
+  padding: 5px;
+}
+
+/*end of table Styling*/
+
+/*.contactForm{
+  color:chocolate;
+}*/
+
+/*contact form styling*/
+form{
+  color:rgb(123, 46, 15);
+}
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+  color:rgb(1, 86, 163);
+}
+
+::placeholder{
+  color:rgb(1, 86, 163);
+}
+
+input[type=submit] {
+  background-color:rgb(123, 46, 15);
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color:rgb(255, 162, 0);
+}
+
+.formContainer {
+  border-radius: 5px;
+  background-color:rgb(255, 204, 102);
+ 
+  padding: 20px;
+}/*end of contact form styling*/
+
+
 
 
 footer{

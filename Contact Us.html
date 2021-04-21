@@ -9,6 +9,9 @@
          <!--Media icon library-->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+        <!--w3schools css-->
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
         <!--custom css-->
         <link rel="stylesheet" href="style.css">
     </head>
@@ -28,10 +31,15 @@
             <a class="active" href="Contact Us.html">Contact Us</a>
         </div>
 
+        <div class="banner">
+            <img class="fa fa-spinner w3-spin" src="images/vecteezy_vinyl-record_1207749.png" alt="spinning record">
+        </div><!--end of banner-->
+
         <div class="row"> <!--Where the main stuff goes-->
 
             <div class="side">
-    
+
+                <h3>Featured</h3>    
                 
                 <img class="featureimg" src="images/Got_to_GB_album.png" alt="Got_to_GB_album"> 
                 <h5>Just Arrived</h5>
@@ -59,7 +67,7 @@
 
                 <h3>Leave Us A Message</h3>
 
-                <form class="contactForm" action="mailto:someone@example.com" method="post" enctype="text/plain">
+                <!--<form class="contactForm" action="mailto:someone@example.com" method="post" enctype="text/plain">
                     Full Name:<br>
                     <input type="text" name="name"><br>
                     Artist:<br>
@@ -72,17 +80,46 @@
                     <input type="text" name="comment" size="50"><br><br>
                     <input type="submit" value="Send">
                     <input type="reset" value="Reset">
-                </form>
+                </form>-->
+
+                <div class="formContainer">
+                    <form action="/action_page.php">
+                      <label for="fname">First Name</label>
+                      <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                  
+                      <label for="lname">Last Name</label>
+                      <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+                      <label for="lname">Email</label>
+                      <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                      
+                      <label for="lname">Artist</label>
+                      <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                      
+                      <label for="lname">Name of Album</label>
+                      <input type="text" id="lname" name="lastname" placeholder="Your last name..">  
+
+                      <label for="country">Country</label>
+                      <select id="country" name="country">
+                        <option value="australia">Australia</option>
+                        <option value="canada">Canada</option>
+                        <option value="usa">USA</option>
+                        <option value="china">China</option>
+                      </select>
+                  
+                      <label for="subject">Subject</label>
+                      <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+                  
+                      <input type="submit" value="Submit">
+                    </form>
+                  </div>
+                  
                 
                 <br>
                 
-                <h3>Find Us</h3>
-                <p>We are located at the top of King Street, just near the Marly Hotel. Phone
-                  us on 02 9519 1234.
-                </p>
                 
-                <!--google maps embed-->
-                <div class="mapouter"><div class="gmap_canvas"><iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=newtown,%20australia&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://putlocker-is.org"></a><br><style>.mapouter{position:relative;text-align:right;height:500px;width:600px;}</style><a href="https://www.embedgooglemap.net">google maps website embed</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:600px;}</style></div></div>
+                
+                
             </div> <!--end of main-->
     
         </div>
