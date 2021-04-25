@@ -8,6 +8,9 @@
 
     <!--w3schools css-->
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    
+    <!--google fonts-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fjalla+One|Libre+Baskerville">
 
     <!--custom css-->
     <link rel="stylesheet" href="style.css">
@@ -20,7 +23,7 @@
     <div class="container"> <!--put the whole thing in here-->
 
     <header>
-        <img  class="center" src="images/retroRecordsNewtown_logo.png" alt="retroRecordsNewtown_logo">
+        <a href="index.html"><img  class="center" src="images/retroRecordsNewtown_logo.png" alt="retroRecordsNewtown_logo"></a>
     </header>
 
     <div class="topnav">
@@ -40,11 +43,11 @@
         <div class="side">
 
             <h3>Featured</h3>
-            <img class="featureimg" src="images/Got_to_GB_album.png" alt="Got_to_GB_album"> 
-            <h5>Just Arrived</h5>
+            <a href="#"><img class="featureimg" src="images/Got_to_GB_album.png" alt="Got_to_GB_album"> </a>
+            <h5> <a href="#">Just Arrived</a> </h5>
 
-            <img class="featureimg" src="images/zeina_bure_AVE_album.png" alt="Got_to_GB_album"> 
-            <h5>Rare Find</h5>
+            <a href="#"> <img class="featureimg" src="images/zeina_bure_AVE_album.png" alt="Got_to_GB_album"> </a>  
+            <h5> <a href="#">Rare Find</a> </h5>
             
             
 
@@ -68,14 +71,42 @@
             
             <br>
             
+
+            
             <!--start of table-->
 
             <table>
               <thead>
                 <tr>
+                  <td colspan="2">
+
+                    <div class="dropdown">
+                      <button onclick="myFunction()" class="dropbtn">Categories</button>
+                      <div id="myDropdown" class="dropdown-content">
+                        <a href="#">Rare LPs</a>
+                        <a href="#">Used Records</a>
+                        <a href="#">Most Popular</a>
+                      </div>
+                    </div>
+
+                  </td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td>
+                    
+                   <div class="searchBox">
+                      <input type="text" placeholder="search...">
+                   </div>
+                    
+                  </td>
+                </tr>
+
+                <tr>
                   <td>Images</td>
-                  <td>Name</td>
-                  <td>Categories</td>
+                  <td>Album Name</td>
+                  <td>Artist/s</td>
+                  <td>Genres</td>
                   <td>Price</td>
                   <td>Buy</td>
                 </tr>
@@ -85,22 +116,55 @@
                 <tr>
                   <td><img class="tableImg" src="images/c53052a1bfbd92bcd48b63389d5de8bf.jpg" alt="igor album"></td>
                   <td>Gothboi Clique</td>
+                  <td>Tyler the Creator</td>
                   <td>Indie/Alternative</td>
                   <td>$12.50</td>
-                  <td>Add to Cart</td>
+                  <td><a class="cart" href="#"> Add to Cart </a> </td>
                 </tr>  
 
                 <tr>
                   <td><img class="tableImg" src="images/ariana_grande__sweetener__album_cover_1_by_areumdawokpop_dcvhbo4-fullview.jpg" alt="arian grande album"></td>
                   <td>Gothboi Clique</td>
+                  <td>Ariana Grande</td>
                   <td>Indie/Alternative</td>
                   <td>$12.50</td>
-                  <td>Add to Cart</td>
+                  <td> <a class="cart" href="#"> Add to Cart </a> </td>
+                </tr>
+                
+                <tr>
+                  <td><img class="tableImg" src="images/Webp.net-compress-image-67-1.jpg" alt="kanye album"></td>
+                  <td>Gothboi Clique</td>
+                  <td>Twisted Sister</td>
+                  <td>Indie/Alternative</td>
+                  <td>$12.50</td>
+                  <td><a class="cart" href="#"> Add to Cart </a> </td>
+                </tr>  
+
+                <tr>
+                  <td><img class="tableImg" src="images/universegfx-juice-wrld-album-cover-behance-version.jpg" alt="juice world album"></td>
+                  <td>Gothboi Clique</td>
+                  <td>George Michael</td>
+                  <td>Indie/Alternative</td>
+                  <td>$12.50</td>
+                  <td><a class="cart" href="#"> Add to Cart </a> </td>
                 </tr>  
               </tbody>
 
               <tfoot>
+                  <tr>
+                    <td class="pagination" colspan="6">
 
+                      <a href="#">&laquo;</a>
+                      <a class="active" href="#">1</a>
+                      <a href="#">2</a>
+                      <a href="#">3</a>
+                      <a href="#">4</a>
+                      <a href="#">5</a>
+                      <a href="#">6</a>
+                      <a href="#">&raquo;</a> 
+
+                    </td>
+                  </tr>
               </tfoot>
             </table>
 
@@ -114,6 +178,9 @@
 
     <footer>
         ©RetroRecords Newtown Pty Limited 20xx. All rights reserved info@retrorecordsnewtown.com.au legals
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-youtube"></a>
+        <a href="#" class="fa fa-twitter"></a>
     </footer>
 
     <script src="index.js"></script>
