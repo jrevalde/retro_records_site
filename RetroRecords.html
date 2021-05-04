@@ -1,188 +1,190 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    
-    <!--Media icon library-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <!--w3schools css-->
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    
-    <!--google fonts-->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fjalla+One|Libre+Baskerville">
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>RetroRecords - Shop</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <!--Media icon library-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <!--custom css-->
-    <link rel="stylesheet" href="style.css">
-    <title>Retro Records - Home</title>
-  </head>
+        <!--w3schools css-->
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+        <!--google fonts-->
+        <!--<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fjalla+One|Libre+Baskerville">-->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Libre+Baskerville&display=swap" rel="stylesheet">
+        
+        <!--custom css-->
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="header">
+            <img class="logo" src="images/retroRecordsNewtown_logo.png" alt="retroRecordsNewtown_logo">
+        </div>
+
+        <div class="banner">
+            <img class="fa fa-spinner w3-spin" src="images/vecteezy_vinyl-record_1207749.png" alt="spinning record">
+        </div>
+        
+        <div class="menu">
+            <a href="index.html">Home</a> 
+            <a class="active" href="RetroRecords.html">RetroRecords</a> 
+            <a href="Rare_LPs.html">Rare LPs</a>
+            <a href="Used_Records.html">Used Records</a>
+            <a href="Contact_Us.html">Contact Us</a> 
+             
+        </div>
+        <div class="row">
+            <div class="col-3">
+                <div class="aside">
+                    <h2>Featured Albums</h2>
+
+                    <br>
+
+                    <a href="RetroRecords.html"><div class="ftr1"></div></a> 
+                    <h5> <a href="RetroRecords.html">Just Arrived</a> </h5>
+
+                    <br>
+
+                    <a href="Rare_LPs.html"><div class="ftr2"></div></a> 
+                    <h5> <a href="Rare_LPs.html">Rare Find</a> </h5>
+                </div>
+            </div>
 
 
-  <body>
-    
-    <div class="container"> <!--put the whole thing in here-->
+            <div class="col-9">
+                <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+                <a href="https://www.youtube.com/" class="fa fa-youtube"></a>
+                <a href="https://twitter.com/?lang=en" class="fa fa-twitter"></a>
 
-    <header>
-        <a href="index.html"><img  class="center" src="images/retroRecordsNewtown_logo.png" alt="retroRecordsNewtown_logo"></a>
-    </header>
+                <h2>Welcome to RetroRecords online store. We are constantly updating these lists.</h2>
 
-    <div class="topnav">
-        <a href="index.html">Home</a>
-        <a class="active" href="RetroRecords.html">Retro Records</a>
-        <a href="Rare LPs.html">Rare LPs</a>
-        <a href="Used Records.html">Used Records</a>
-        <a href="Contact Us.html">Contact Us</a>
-    </div>
+                <br>
 
-    <div class="banner">
-      <img class="fa fa-spinner w3-spin" src="images/vecteezy_vinyl-record_1207749.png" alt="spinning record">
-    </div><!--end of banner-->
 
-    <div class="row"> <!--Where the main stuff goes-->
-
-        <div class="side">
-
-            <h3>Featured</h3>
-            <a href="#"><img class="featureimg" src="images/Got_to_GB_album.png" alt="Got_to_GB_album"> </a>
-            <h5> <a href="#">Just Arrived</a> </h5>
-
-            <a href="#"> <img class="featureimg" src="images/zeina_bure_AVE_album.png" alt="Got_to_GB_album"> </a>  
-            <h5> <a href="#">Rare Find</a> </h5>
-            
-            
-
-        </div> <!--end of side-->
-
-        <div class="main">
-          
-              <a href="#" class="fa fa-facebook"></a>
-              <a href="#" class="fa fa-youtube"></a>
-              <a href="#" class="fa fa-twitter"></a>
-           
-            <br>
-
-            <!--landscape image goes here-->
-           
-            <img class="mainImg" src="images/pexels-mick-haupt-5668029.jpg" alt="picure of retro records interior">
-            
-            <br>
-
-            <h3 class="shopTitle">Welcome to RetroRecords online store. We are constantly updating these lists.</h3>
-            
-            <br>
-            
-
-            
-            <!--start of table-->
-
-            <table>
-              <thead>
-                <tr>
-                  <td colspan="2">
-
+                <div class="shop">
                     <div class="dropdown">
-                      <button onclick="myFunction()" class="dropbtn">Categories</button>
-                      <div id="myDropdown" class="dropdown-content">
-                        <a href="#">Rare LPs</a>
-                        <a href="#">Used Records</a>
-                        <a href="#">Most Popular</a>
+                        <button onclick="myFunction()" class="dropbtn">Categories</button>
+                        <div id="myDropdown" class="dropdown-content">
+                          <a href="#">Rare LPs</a>
+                          <a href="#">Used Records</a>
+                          <a href="#">Most Popular</a>
+                        </div>
                       </div>
+
+                      <div class="droopdown">
+                        <button onclick="myFuunction()" class="droopbtn">results</button>
+                        <div id="myDroopdown" class="droopdown-content">
+                          <a href="#">20</a>
+                          <a href="#">50</a>
+                          <a href="#">100</a>
+                        </div>
+                      </div>  
+                     
+                    <!--pagination-->
+                    <div class="pagination">
+                        <a href="#">&laquo;</a>
+                        <a class="active" href="#">1</a>
+                        <a href="#">2</a>
+                        <a href="#">3</a>
+                        <a href="#">4</a>
+                        <a href="#">5</a>
+                        <a href="#">6</a>
+                        <a href="#">&raquo;</a> 
                     </div>
+                    <!--end of pagination-->
 
-                  </td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td>
-                    
-                   <div class="searchBox">
-                      <input type="text" placeholder="search...">
-                   </div>
-                    
-                  </td>
-                </tr>
-
-                <tr>
-                  <td>Images</td>
-                  <td>Album Name</td>
-                  <td>Artist/s</td>
-                  <td>Genres</td>
-                  <td>Price</td>
-                  <td>Buy</td>
-                </tr>
-              </thead>
-
-              <tbody>
-                <tr>
-                  <td><img class="tableImg" src="images/c53052a1bfbd92bcd48b63389d5de8bf.jpg" alt="igor album"></td>
-                  <td>Gothboi Clique</td>
-                  <td>Tyler the Creator</td>
-                  <td>Indie/Alternative</td>
-                  <td>$12.50</td>
-                  <td><a class="cart" href="#"> Add to Cart </a> </td>
-                </tr>  
-
-                <tr>
-                  <td><img class="tableImg" src="images/ariana_grande__sweetener__album_cover_1_by_areumdawokpop_dcvhbo4-fullview.jpg" alt="arian grande album"></td>
-                  <td>Gothboi Clique</td>
-                  <td>Ariana Grande</td>
-                  <td>Indie/Alternative</td>
-                  <td>$12.50</td>
-                  <td> <a class="cart" href="#"> Add to Cart </a> </td>
-                </tr>
+                    <div class="search">
+                        <input type="text" placeholder="search...">
+                    </div>
+                </div><!--end of shop-->
                 
-                <tr>
-                  <td><img class="tableImg" src="images/Webp.net-compress-image-67-1.jpg" alt="kanye album"></td>
-                  <td>Gothboi Clique</td>
-                  <td>Twisted Sister</td>
-                  <td>Indie/Alternative</td>
-                  <td>$12.50</td>
-                  <td><a class="cart" href="#"> Add to Cart </a> </td>
-                </tr>  
 
-                <tr>
-                  <td><img class="tableImg" src="images/universegfx-juice-wrld-album-cover-behance-version.jpg" alt="juice world album"></td>
-                  <td>Gothboi Clique</td>
-                  <td>George Michael</td>
-                  <td>Indie/Alternative</td>
-                  <td>$12.50</td>
-                  <td><a class="cart" href="#"> Add to Cart </a> </td>
-                </tr>  
-              </tbody>
-
-              <tfoot>
-                  <tr>
-                    <td class="pagination" colspan="6">
-
-                      <a href="#">&laquo;</a>
-                      <a class="active" href="#">1</a>
-                      <a href="#">2</a>
-                      <a href="#">3</a>
-                      <a href="#">4</a>
-                      <a href="#">5</a>
-                      <a href="#">6</a>
-                      <a href="#">&raquo;</a> 
-
-                    </td>
-                  </tr>
-              </tfoot>
-            </table>
-
-            <!--end of table-->
             
-        </div> <!--end of main-->
 
-    </div>
+                <!--start of table-->
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th> <a href="#">Image</a> </th>
+                            <th><a href="#">Album Name</a></th>
+                            <th><a href="#">Artist/s</a></th>
+                            <th><a href="#">Genre/s</a></th>
+                            <th><a href="#">Price</a></th>
+                            <th><a href="#">Buy</a></th>
+                        </tr>
+                    </thead>    
+                        <tbody>
+                            <tr>
+                                <td data-label="Images"><img src="images/universegfx-juice-wrld-album-cover-behance-version.jpg" alt="juice world album"></td>
+                                <td data-label="Album Name"> Gothboi Clique</td>
+                                <td data-label="Artist/s">George Michael</td>
+                                <td data-label="Genres">Rock</td>
+                                <td data-label="Price">$12.50</td>
+                                <td data-label="Buy"> <a class="btn" href="#">ADD</a> </td>
+                            </tr>
+                            <tr>
+                                <td data-label="Images"><img src="images/ariana_grande__sweetener__album_cover_1_by_areumdawokpop_dcvhbo4-fullview.jpg" alt="ariane grande album"></td>
+                                <td data-label="Album Name">Gothboi Clique</td>
+                                <td data-label="Artist/s">Tyler the Creator</td>
+                                <td data-label="Genres">Indie/Alternative</td>
+                                <td data-label="Price">$12.50</td>
+                                <td data-label="Buy"> <a class="btn" href="#">ADD</a> </td>
+                            </tr>
+                            <tr>
+                                <td data-label="Images"><img src="images/Webp.net-compress-image-67-1.jpg" alt="kanye album"></td>
+                                <td data-label="Album Name">Gothboi Clique</td>
+                                <td data-label="Artist/s">Ariana Grande</td>
+                                <td data-label="Genres">Indie/Alternative</td>
+                                <td data-label="Price">$12.50</td>
+                                <td data-label="Buy"> <a class="btn" href="#">ADD</a> </td>
+                            </tr>
+                            <tr>
+                                <td data-label="Images"><img src="images/c53052a1bfbd92bcd48b63389d5de8bf.jpg" alt="tyler album"></td>
+                                <td data-label="Album Name">Gothboi Clique</td>
+                                <td data-label="Artist/s">Twisted Sister</td>
+                                <td data-label="Genres">Hip Hop</td>
+                                <td data-label="Price">$12.50</td>
+                                <td data-label="Buy"> <a class="btn" href="#">ADD</a> </td>
+                            </tr>
+                            
+                        </tbody>
 
-    </div> <!--end of container div-->
+                </table>
+                <!--end of table-->
 
-    <footer>
-        ©RetroRecords Newtown Pty Limited 20xx. All rights reserved info@retrorecordsnewtown.com.au legals
-        <a href="#" class="fa fa-facebook"></a>
-        <a href="#" class="fa fa-youtube"></a>
-        <a href="#" class="fa fa-twitter"></a>
-    </footer>
+                <br>
 
-    <script src="index.js"></script>
-  </body>
+                <!--pagination-->
+                <div class="pagination">
+                    <a href="#">&laquo;</a>
+                    <a class="active" href="#">1</a>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                    <a href="#">4</a>
+                    <a href="#">5</a>
+                    <a href="#">6</a>
+                    <a href="#">&raquo;</a> 
+                </div>
+                <!--end of pagination-->
+            </div><!--end of col-9-->
+        </div><!--END OF ROW-->
+
+        <div class="footer">
+            ©RetroRecords Newtown Pty Limited 20xx. All rights reserved info@retrorecordsnewtown.com.au legals 
+            <br>
+            <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+            <a href="https://www.youtube.com/" class="fa fa-youtube"></a>
+            <a href="https://twitter.com/?lang=en" class="fa fa-twitter"></a>
+        </div>
+
+        <script src="index.js"></script>
+    </body>
 </html>

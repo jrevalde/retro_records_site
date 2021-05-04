@@ -1,120 +1,134 @@
-body {
-    margin: 0;
-    background-color: rgb(18, 45, 89);
-    padding-top: 20px;
-    font-family: 'Libre Baskerville', serif;
-    font-size: 1.1em;
-}
-
+/*box sizing makes sure that padding
+and border are included in the total
+width and height of the elements*/
 * {
     box-sizing: border-box;
   }
 
-.container{
-    max-width: 992px;
-    margin: auto;
-    background-color: rgb(251, 251, 251);
-    border-radius: 14px;
+body{
+    font-family: 'Libre Baskerville', serif;
+    font-size: 1.1em;
 }
 
-.center {
+h1, h2, h3, h4, h5{
+    font-family: 'Fjalla One', sans-serif;
+}
+  
+.row::after {
+content: "";
+clear: both;
+display: table;
+} 
 
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+
+.header {
+    
+    background-color: rgb(251, 251, 251);
+    padding: 15px;
+  }
+
+.logo{
     display: block;
     padding-top: 20px;
     padding-bottom: 20px;
     margin-left: auto;
     margin-right: auto;
-  }
+}
 
-.topnav{
-      display: flex;
-      align-items: center;
-      justify-content: center;
-  }
 
-  /* Style the navigation bar links */
-.topnav a {
-    color: rgb(123, 46, 15);
-    padding: 14px 20px;
+
+.menu{
+display: flex;  
+flex-direction: column;
+margin: 0;
+padding: 0;
+}
+
+
+/* sky blue color #33b5e5 */
+
+.menu a {
     text-decoration: none;
-    text-align: center;
-  }
-  
-  /* Change color on hover */
-.topnav a:hover, .topnav .active {
-    color: rgb(255, 162, 0);
-  }
+padding: 8px;
+margin-bottom: 0px;
+background-color: rgb(1, 86, 163);
+color: #ffffff;
+box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+text-align: center;
+}
 
 
-/*banner styling*/  
+    
+
+.menu a:hover, .menu .active{
+background-color: rgb(18, 45, 89);
+}
+
 .banner{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: auto;
-  height: 240px;
-  background-image: url(images/pexels-expect-best-351265.jpg);
-  background-size:cover;
-  box-shadow:10px 10px 50px 10px black inset; 
-  
-}
-
-.w3-spin{
-  height: 200px;
-}
-
-/*end of banner styling*/
-
-
-.row{
-     display: flex;
-     flex-wrap: wrap; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 240px;
+    background-image: url(images/pexels-expect-best-351265.jpg);
+    background-size:cover;
+    box-shadow:10px 10px 50px 10px black inset;
+    margin-bottom: 4px;
+    
   }
 
-.side{
-  flex: 30%;
-  display: flex;
-  flex-direction: column;
-  padding: 20px;
-}
-
-.side h3, h5{
-  font-family: 'Fjalla One', sans-serif;
-}
-
-.side h3{
-  color: rgb(1, 86, 163);
-}
-
-.side h5{
-  color: rgb(123, 46, 15);
-}
-
-.side a{
-  text-decoration: none;
-}
-
-.featureimg{
-  height: 215px;
-  width: 200px;
-  padding-top: 20px;
-  object-fit: cover;
-}
-
-.main{
-      flex: 70%;
-      padding: 20px;
+  .w3-spin{
+    height: 200px;
   }
 
-.mainImg{
-  height: 200px;
-  width: 620px;
-  
-  object-fit: cover;
-  border-radius: 15px;
+.aside {
+    background-color: rgb(123, 46, 15);
+    padding: 10px;
+    color: rgb(255, 162, 0);
+    text-align: center;
+    font-size: 14px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+} 
+
+.aside a{
+    text-decoration: none;
 }
 
-.main .fa {
+.aside a:hover{
+    opacity: 0.7;
+}
+.ftr1{
+    height: 215px;
+    width: 200px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgb(255, 162, 0);
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url(images/Got_to_GB_album.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.ftr2{
+    height: 215px;
+    width: 200px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgb(255, 162, 0);
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url(images/zeina_bure_AVE_album.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+/* MAIN BODY STYLING GOES HERE */
+
+.col-9 .fa {
     padding: 20px;
     font-size: 30px;
     width: 30px;
@@ -125,219 +139,427 @@ body {
    
   }
   
-.main .fa:hover {
+.col-9 .fa:hover {
     opacity: 0.7;
 }
 
-.main h2, .main h3{
-  color: rgb(123, 46, 15);
-  font-family: 'Fjalla One', sans-serif;
+
+.col-9 h2, .col-9 h3 {
+    color: rgb(123, 46, 15);
 }
 
-.shopTitle{
-  text-align: center;
-}
-  
-.main p{
-  color: rgb(1, 86, 163);
+.col-9 .inline{
+    text-decoration: none;
+    color: rgb(255, 162, 0);
 }
 
-.main .inline {
-  color: rgb(255, 162, 0);
-  text-decoration: none;
+.col-9 .inline:hover {
+    color: white;
+    background-color: rgb(255, 162, 0);
 }
 
-/* Change color on hover */
-.main .inline:hover {
-  color: white;
-  background-color: rgb(255, 162, 0);
+.shop{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 4px;
 }
-
-/*table styling*/
-table{
-  border-collapse: collapse;
-  margin: 25px, 0;
-  font-family: Arial;
-  font-size: 0.9em;
-  min-width: 400px;
-  width:100%;
-}
-
-th, td {
-  border-bottom: 1px solid #ddd;
-  padding-right: 10px;
-}
-
-.tableImg{
-  height: 100px;
-  padding: 5px;
-}
-
-.cart{
-  background-color: rgb(255, 162, 0); /* Green */
-  border: none;
-  border-radius: 5px;
-  color: white;
-  padding: 6px 10px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  
-  
-}
-
-.cart:hover{
-  background-color: rgb(123, 46, 15);
-}  
 
 /*drop down categories*/
 
 .dropbtn {
-  background-color: rgb(123, 46, 15);
-  color: white;
-  padding: 16px;
-  font-size: 16px;
-  border: none;
-  cursor: pointer;
-  border-radius: 14px;
-}
+    background-color: rgb(123, 46, 15);
+    color: white;
+    padding: 8px;
+    font-size: 0.7em;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  .dropbtn:hover, .dropbtn:focus {
+    background-color: rgb(255, 162, 0);
+  }
+  
+  .dropdown {
+    flex: 20%;
+    
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 80px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    font-size: 00.7em;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 6px 8px;
+    text-decoration: none;
+    display: block;
+    
+  }
+  
+  .dropdown a:hover {background-color: #ddd;}
+  
+  .show {
+    display: block;
+  }
+  
+  /*end of dropdown categories*/
 
-.dropbtn:hover, .dropbtn:focus {
-  background-color: rgb(255, 162, 0);
-}
+/*drop down 2*/
+.droopbtn {
+    background-color: rgb(123, 46, 15);
+    color: white;
+    padding: 8px;
+    font-size: 0.7em;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  .droopbtn:hover, .droopbtn:focus {
+    background-color: rgb(255, 162, 0);
+  }
+  
+  .droopdown {
+    flex: 20%;
+    
+  }
+  
+  .droopdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 40px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    font-size: 00.7em;
+  }
+  
+  .droopdown-content a {
+    color: black;
+    padding: 6px 8px;
+    text-decoration: none;
+    display: block;
+    
+  }
+  
+  .droopdown a:hover {background-color: #ddd;}
+  
+  .shoow {
+    display: block;
+  }
+/*end of dropdown2*/
 
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
+/*pagination styling*/
 
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f1f1f1;
-  min-width: 160px;
-  overflow: auto;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-
-.dropdown a:hover {background-color: #ddd;}
-
-.show {display: block;}
-
-/*end of dropdown categories*/
-
-
-/* Pagination links */
-.pagination a {
-  color: black;
- font-size: 0.7em;
-  padding: 4px 18px;
-  text-decoration: none;
-  transition: background-color .3s;
-}
-
-/* Style the active/current link */
-.pagination a.active {
-  background-color: rgb(1, 86, 163);
-  color: white;
-}
-
-/* Add a grey background color on mouse-over */
-.pagination a:hover:not(.active) {background-color: #ddd;}
-
-
-
-
-
-/*end of table Styling*/
-
-/*.contactForm{
-  color:chocolate;
-}*/
-
-/*contact form styling*/
-form{
-  color:rgb(123, 46, 15);
-}
-input[type=text], select, textarea {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-  margin-top: 6px;
-  margin-bottom: 16px;
-  resize: vertical;
-  color:rgb(1, 86, 163);
-}
-
-::placeholder{
-  color:rgb(1, 86, 163);
-}
-
-input[type=submit] {
-  background-color:rgb(123, 46, 15);
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-input[type=submit]:hover {
-  background-color:rgb(255, 162, 0);
-}
-
-.formContainer {
-  border-radius: 5px;
-  background-color:rgb(255, 204, 102);
- 
-  padding: 20px;
-}/*end of contact form styling*/
-
-
-
-
-footer{
-    padding: 20px;
-    text-align: center;
-    color: rgb(251, 251, 251);
-    font-size: 0.8em;
+.pagination {
+    flex: 20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 0.7em;
+  }
+  
+  .pagination a {
+    color: black;
+    float: left;
+    padding: 4px;
+    text-decoration: none;
+  }
+  
+  .pagination a.active {
+    background-color: rgb(1, 86, 163);
+    color: white;
+    border-radius: 5px;
+  }
+  
+  .pagination a:hover:not(.active) {
+    background-color: #ddd;
+    border-radius: 5px;
   }
 
-  footer a{
+/*end of pagination styling*/
+
+/*searchbar styling*/
+.search{
+    flex: 20%;
+}
+
+.search input{
+    font-size: 0.7em;
+    
+}
+
+.search input[type=text], select, textarea {
+    width: 100%;
+    padding: 4px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: auto;
+    margin-bottom: auto;
+    resize: vertical;
+    color: rgb(1, 86, 163);}
+
+/*end of searchbar styling*/
+
+/*form styling*/
+
+form{
+    color:rgb(123, 46, 15);
+  }
+  input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    color:rgb(1, 86, 163);
+  }
+  
+  ::placeholder{
+    color:rgb(1, 86, 163);
+  }
+  
+  input[type=submit] {
+    background-color:rgb(123, 46, 15);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color:rgb(255, 162, 0);
+  }
+  
+  .formContainer {
+    border-radius: 5px;
+    background-color:rgb(255, 204, 102);
+   
+    padding: 20px;}
+
+/*end of form styling*/
+
+
+/*table styling*/
+
+.table{
+    width:100%;
+    border-collapse: collapse;
+}
+
+.table thead{
+    background-color: rgb(255, 162, 0);
+}
+.table thead tr th{
+   font-size: 0.8em;
+   font-weight: 600; 
+   letter-spacing: 0.35px;
+   color: white;
+   opacity: 1;
+   padding: 12px;
+   vertical-align: top;
+   border: 1px solid white;
+}
+.table thead tr th a{
+    text-decoration: none;
+}
+.table thead tr th a:hover{
+    color: rgb(123, 46, 15);
+}
+.table tbody tr td{
+    font-size: 0.8em;
+    letter-spacing: 0.35px;
+    font-weight: normal;
+    padding: 8px;
+    text-align: center;
+    border-bottom: 1px solid rgb(1, 86, 163);
+}
+.table tbody tr td .btn{
+    width: 100px;
+    text-decoration: none;
+    line-height: 35px;
+    display: inline-block;
+    background-color: rgb(123, 46, 15);
+    color: white;
+    font-weight:bold;
+    text-align: center;
+    vertical-align: middle;
+    user-select: none;
+    font-size: 0.8em;
+    opacity: 1;
+}
+
+.table tbody tr td .btn:hover{
+    background-color: rgb(1, 86, 163);
+}
+/*end of table styling*/
+
+
+
+/* END OF MAIN BODY STYLING */
+
+.footer {
+background-color: rgb(1, 86, 163);
+color: #ffffff;
+text-align: center;
+font-size: 12px;
+padding: 15px;
+}
+
+.footer a{
     text-decoration: none;
   }
 
-  /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 768px) {
-    .row, .topnav {   
-      flex-direction: column;
-    }
+
+/* For mobile phones: */
+[class*="col-"] {
+width: 100%;
+} 
+
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+
+  .menu{
+      flex-direction: row;
+      
   }
 
-  @media screen and (max-width: 768px) {
-    .side {   
-      flex-wrap: wrap;
-      justify-content: center;
+  .menu a{
+      flex: 20%;
+      text-align: center;
+      margin-left: 2px;
+      margin-right: 2px;
+      border-radius: 6px;
+  }
+
+  .ftr1{
+      width: 142px;
+      height: 132px;
+  }
+
+  .ftr2{
+    width: 142px;
+    height: 132px;
     }
-  }  
 
-  @media screen and (max-width: 768px) {
-    .main {   
-      display: flex;
-      flex-direction: column;
-      flex-wrap: wrap;
-      justify-content: center;
+    /*table styling*/
+
+.table{
+    width:100%;
+    border-collapse: collapse;
+}
+
+
+.table thead{
+    background-color: rgb(255, 162, 0);
+}
+.table thead tr th{
+   font-size: 0.8em;
+   font-weight: 600; 
+   letter-spacing: 0.35px;
+   color: white;
+   opacity: 1;
+   padding: 12px;
+   vertical-align: top;
+   border: 1px solid white;
+}
+
+.table tbody tr td{
+    font-size: 0.8em;
+    letter-spacing: 0.35px;
+    font-weight: normal;
+    padding: 8px;
+    text-align: center;
+    border-bottom: 1px solid black;
+}
+.table tbody tr td .btn{
+    width: 100px;
+    text-decoration: none;
+    line-height: 35px;
+    display: inline-block;
+    background-color: rgb(123, 46, 15);
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: middle;
+    user-select: none;
+    font-size: 0.8em;
+    opacity: 1;
+}
+.table tbody tr td .btn:hover{
+    background-color: rgb(255, 162, 0);
+}
+
+.table tbody tr td img{
+    height: 100px;
+    padding: 5px;
+}
+/*END OF TABLE STYLING*/
+
+}
+
+@media (max-width: 768px)
+{
+    .table thead{
+        display: none;
     }
-  }  
-
-
+    .table, .table tbody, .table tr, .table td{
+        display: block;
+        width: 100%;
+    }
+    
+    .table tr{
+        margin-bottom: 15px;
+    }
+    
+    .table tbody tr td{
+        background-color:rgb(255, 162, 0);
+        color:white;
+        text-align: right;
+        padding-left: 50%;
+        position: relative;
+    
+    }
+    
+    .table td:before{
+        content: attr(data-label);
+        position: absolute;
+        left: 0;
+        width: 50%;
+        padding-left:  15px;
+        font-weight: 600;
+        font-size: 14px;
+        text-align: left;
+    }
+    .table tbody tr td img{
+        height: 100px;
+        padding: 5px;
+    }
+}
